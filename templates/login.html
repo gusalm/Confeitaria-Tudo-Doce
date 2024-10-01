@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #ffccdd; /* Rosa claro */
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center; /* Centraliza os itens da lista */
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #d5006d; /* Rosa mais forte */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff669d; /* Rosa médio */
+        }
+
+        /* Container de Login */
+        .login-container {
+            flex: 1; /* Faz a seção de login ocupar o espaço disponível */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(255, 238, 248, 0.9); /* Fundo suave com leve transparência */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 50px auto; /* Centraliza o container */
+        }
+
+        .login-container h2 {
+            font-size: 2rem;
+            color: #d5006d; /* Rosa mais forte */
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .login-container input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50; /* Cor do botão */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049; /* Cor do botão ao passar o mouse */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffccdd; /* Rosa claro */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .social {
+            margin-top: 10px; /* Espaço acima da seção social */
+        }
+
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #d5006d; /* Rosa mais forte */
+        }
+
+        .social a:hover {
+            color: #ff669d; /* Rosa médio ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+            <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+            <li><a href="{{ url_for('contatos') }}">Contato</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <!-- Formulário com method POST para enviar os dados -->
+        <form action="/login" method="POST" onsubmit="saveCredentials()">
+            <input type="text" id="username" name="username" placeholder="Usuário" required autocomplete="username">
+            <input type="password" id="password" name="password" placeholder="Senha" required autocomplete="current-password">
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Para Sempre Doce. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
