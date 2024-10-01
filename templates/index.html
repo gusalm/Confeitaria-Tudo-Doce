@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Doce - Home</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o body preencha a altura total da tela */
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-size: cover; /* Faz a imagem cobrir todo o fundo */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Não repete a imagem */
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 204, 221, 0.8); /* Rosa claro com leve transparência */
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            color: #d5006d; /* Rosa mais forte */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #d5006d;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff669d; /* Rosa médio */
+        }
+
+        /* Hero Section */
+        .hero {
+            flex: 1; /* Faz a seção hero ocupar o espaço disponível */
+            background-color: rgba(255, 238, 248, 0.8); /* Fundo suave com leve transparência */
+            background-image: url('/static/img/confei.png');
+            background-size: cover; /* Faz a imagem cobrir toda a seção */
+            background-position: center; /* Centraliza a imagem */
+            padding: 120px 0;
+            text-align: center;
+            display: flex; /* Adicionado para centralizar conteúdo */
+            flex-direction: column; /* Para alinhar texto verticalmente */
+            justify-content: center; /* Centraliza verticalmente */
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #d5006d;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #222;
+            margin-bottom: 20px;
+
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(255, 204, 221, 0.8); /* Rosa claro com leve transparência */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .social {
+            margin-top: 10px; /* Espaço acima da seção social */
+        }
+
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #d5006d;
+        }
+
+        .social a:hover {
+            color: #ff669d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tudo Doce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="cardapio">Cardápio</a></li>
+                    <li><a href="contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Bem-vindo ao Tudo Doce!</h2>
+        <p>Delícias que vão adoçar o seu dia.</p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tudo Doce. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

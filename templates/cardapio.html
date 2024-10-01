@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Doce - Cardápio</title>
+</head>
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ffccdd; /* Rosa claro */
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #d5006d; /* Rosa mais forte */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d5006d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff669d; /* Rosa médio */
+}
+
+/* Cardápio Section */
+.cardapio {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cardapio h2 {
+    font-size: 2.5rem;
+    color: #d5006d;
+    margin-bottom: 30px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #fff; /* Fundo branco para os itens */
+    border: 2px solid #ff669d; /* Borda rosa médio */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    color: #d5006d;
+    margin: 10px 0;
+}
+
+.item p {
+    color: #333;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumenta levemente o item ao passar o mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Footer */
+footer {
+    background-color: #ffccdd;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0px;
+}
+
+.social {
+    margin-top: 0px; /* Espaço acima da seção social */
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #d5006d;
+}
+
+.social a:hover {
+    color: #ff669d;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tudo Doce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="cardapio" class="cardapio">
+        <div class="container">
+            <h2>Nossas Delícias</h2>
+            <div class="item">
+                <img src="https://www.cookingclassy.com/wp-content/uploads/2017/03/chocolate-cupcakes-12-500x500.jpg" alt="Cupcake">
+                <h3>Cupcake</h3>
+                <p>20,00R$</p>
+            </div>
+            <div class="item">
+                <img src="https://www.docespersonalizado.com.br/image/cache/catalog/Brigadeiro/brigadeiro_15-500x500.jpg" alt="Brigadeiro">
+                <h3>Brigadeiro</h3>
+                <p>3,00R$ p/ unidade</p>
+            </div>
+            <div class="item">
+                <img src="https://receitinhasdemae.com.br/wp-content/uploads/2024/06/beijinho-sem-leite-condensado-1-500x500.jpg" alt="Beijinho">
+                <h3>Beijinho</h3>
+                <p>3,00R$ p/ unidade</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tudo Doce. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

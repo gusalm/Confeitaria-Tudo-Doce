@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Doce - Contato</title>
+</head>
+<style>
+    /* Reset e estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ffccdd; /* Rosa claro */
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 2.5rem;
+    color: #d5006d; /* Rosa mais forte */
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d5006d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff669d; /* Rosa médio */
+}
+
+/* Seção de Contato */
+.contact {
+    flex: 1; /* Faz a seção de contato ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #d5006d;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+address {
+    font-style: normal; /* Remove o estilo itálico padrão */
+}
+
+/* Footer */
+footer {
+    background-color: #ffccdd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social {
+    margin-top: 10px; /* Espaço acima da seção social */
+}
+
+.social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #d5006d;
+}
+
+.social a:hover {
+    color: #ff669d;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Tudo Doce</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="cardapio">Cardápio</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+            <p>Tem alguma dúvida ou deseja fazer um pedido?<br>Entre em contato conosco através dos seguintes meios:</p>
+            <address>
+                <p><strong>Endereço:</strong> Rua das Delícias, 123 - São Paulo, SP</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>E-mail:</strong> <a href="mailto:contato@tudodoce.com.br">contato@tudodoce.com.br</a></p>
+            </address>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tudo Doce. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
