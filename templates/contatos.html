@@ -123,10 +123,10 @@ footer p {
             </div>
             <nav>
                 <ul>
-                    <li><a href="index">Home</a></li>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="cardapio">Cardápio</a></li>
-                    <li><a href="">Contato</a></li>
+                   <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+                    <li><a href="{{ url_for('cardapio') }}">Cardápio</a></li>
+                    <li><a href="{{ url_for('') }}">Contato</a></li>
                 </ul>
             </nav>
         </div>
